@@ -6,7 +6,7 @@
     <style>
       body,
       html {
-        height: 100%;
+        width: 100%;
         margin: 0;
         display: flex;
         align-items: center;
@@ -16,7 +16,7 @@
 
       #script-container {
         width: 100vw; /* Utilisation de la largeur de la vue pour assurer une largeur à 100% de l'écran */
-        height: 100vh; /* Utilisation de la hauteur de la vue pour assurer une hauteur à 100% de l'écran */
+        height: auto; /* Utilisation de la hauteur de la vue pour assurer une hauteur à 100% de l'écran */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -25,6 +25,12 @@
       #script-container script {
         width: 100%; /* Assurer que le script occupe 100% de la largeur du script-container */
         height: auto; /* Ajustement de la hauteur automatique pour conserver les proportions */
+      }
+
+      @media only screen and (max-width: 767px) {
+        #script-container {
+          width: 100%; /* Pour les appareils mobiles, utilisez une largeur de 100% */
+        }
       }
     </style>
   </head>
