@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Marée SHOM DDC</title>
     <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        #script-container {
-            width: 100%;
-            height: 100%;
-        }
+      body,
+      html {
+        width: 100wh;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden; /* Ajout de cette propriété pour masquer le défilement de la page principale */
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="script-container">
-        <script src="https://services.data.shom.fr/hdm/vignette/grande/DEGRAD_DES_CANNES?locale=fr"></script>
+      <script src="https://services.data.shom.fr/hdm/vignette/grande/DEGRAD_DES_CANNES?locale=fr"></script>
     </div>
-</body>
+  </body>
 </html>
