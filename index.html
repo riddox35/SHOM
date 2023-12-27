@@ -10,13 +10,21 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            overflow: hidden; /* Ajout de cette propriété pour masquer le défilement de la page principale */
+            overflow: hidden;
         }
 
         #script-container {
-            height: 100vh; /* Utilisation de la hauteur de la vue pour assurer une hauteur à 100% de l'écran */
-            width: auto;
-            overflow-y: auto; /* Ajout de cette propriété pour activer le défilement vertical si nécessaire */
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #script-container script {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
